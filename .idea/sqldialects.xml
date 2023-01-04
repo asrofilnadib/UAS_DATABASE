@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="SqlDialectMappings">
+    <file url="file://$PROJECT_DIR$/Budi Raharjo/Modul 12 Mengakses Database/PDO/pdoDelete.php" dialect="GenericSQL" />
+    <file url="file://$PROJECT_DIR$/Budi Raharjo/Modul 12 Mengakses Database/PDO/pdoInsert.php" dialect="GenericSQL" />
+    <file url="file://$PROJECT_DIR$/Budi Raharjo/Modul 12 Mengakses Database/PDO/pdoSelect.php" dialect="GenericSQL" />
+    <file url="file://$PROJECT_DIR$/Budi Raharjo/Modul 12 Mengakses Database/PDO/pdoUpdateForm.php" dialect="GenericSQL" />
+    <file url="file://$PROJECT_DIR$/Budi Raharjo/Modul 12 Mengakses Database/delete.php" dialect="GenericSQL" />
+    <file url="file://$PROJECT_DIR$/Budi Raharjo/Modul 12 Mengakses Database/form_update.php" dialect="GenericSQL" />
+    <file url="file://$PROJECT_DIR$/Budi Raharjo/Modul 12 Mengakses Database/insert.php" dialect="GenericSQL" />
+    <file url="file://$PROJECT_DIR$/Budi Raharjo/Modul 12 Mengakses Database/showdata.php" dialect="GenericSQL" />
+    <file url="file://$PROJECT_DIR$/Budi Raharjo/Workshop/do_login.php" dialect="GenericSQL" />
+    <file url="file://$PROJECT_DIR$/Budi Raharjo/Workshop/do_register.php" dialect="GenericSQL" />
+    <file url="file://$PROJECT_DIR$/UAS Database/PDO/pdoDelete.php" dialect="GenericSQL" />
+    <file url="file://$PROJECT_DIR$/UAS Database/PDO/pdoInsert.php" dialect="GenericSQL" />
+    <file url="file://$PROJECT_DIR$/UAS Database/PDO/pdoSelect.php" dialect="GenericSQL" />
+  </component>
+</project>
