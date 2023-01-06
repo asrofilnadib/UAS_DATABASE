@@ -14,5 +14,7 @@
     <file url="file://$PROJECT_DIR$/UAS Database/PDO/pdoDelete.php" dialect="GenericSQL" />
     <file url="file://$PROJECT_DIR$/UAS Database/PDO/pdoInsert.php" dialect="GenericSQL" />
     <file url="file://$PROJECT_DIR$/UAS Database/PDO/pdoSelect.php" dialect="GenericSQL" />
+    <file url="file://$PROJECT_DIR$/UAS Database/do_registerP.php" dialect="GenericSQL" />
+    <file url="file://$PROJECT_DIR$/UAS Database/do_registerW.php" dialect="GenericSQL" />
   </component>
 </project>
