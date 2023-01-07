@@ -1,6 +1,6 @@
 <html lang="id">
 <head>
-	<title>Workshop 1 - authentication user</title>
+	<title>Registration Proccess</title>
 </head>
 <body>
 <h2>Status Registrasi</h2>
@@ -66,7 +66,7 @@
 		} else {
 			?>
 			Proses Registrasi gagal. Silahkan diulangi<br>
-			[<a href="registerP.php">Kembali ke form registrasi</a>
+			[<a href="registerP.html">Kembali ke form registrasi</a>
 			<?php
 		}
 	}

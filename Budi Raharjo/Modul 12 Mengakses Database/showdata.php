@@ -30,7 +30,7 @@
                 <?php
                 while ($row = mysqli_fetch_row($result)){
                 ?>
-                        <tr>
+                   <tr>
                             <?php
                             $nip = $row[0];
                             $nama = $row[1];
@@ -42,11 +42,11 @@
                                     <input type="checkbox" name="data[]"
                                            value="<?php echo $nip;?>">
                                 </label>
+								<?php echo $nip;?>
                             </td>
-                            <td><?php echo $nip;?></td>
                             <td>
                                 <a  href="form_update.php?nip=<?php echo $nip;?>">
-                                <?php echo $nama;?></td>
+                                  <?php echo $nama;?></a></td>
                             <td><?php echo $alamat;?></td>
                             <td><?php echo $no_hp;?></td>
                         </tr>

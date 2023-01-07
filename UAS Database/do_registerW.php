@@ -1,6 +1,6 @@
 <html lang="id">
 <head>
-    <title>Workshop 1 - authentication user</title>
+    <title>Registration Proccess</title>
 </head>
 <body>
 <h2>Status Registrasi</h2>
@@ -27,7 +27,7 @@
         if ($num > 0) {
             ?>
             Selamat, Anda telah terdaftar di website kami.<br>
-            [<a href="login.php">Login</a><br><br>
+            <a href="login.php">Login</a><br><br>
             <table>
                 <tr>
                     <td>NIK: </td>
@@ -66,7 +66,7 @@
         } else {
             ?>
             Proses Registrasi gagal. Silahkan diulangi<br>
-            [<a href="registerW.php">Kembali ke form registrasi</a>
+            [<a href="registerW.html">Kembali ke form registrasi</a>
             <?php
         }
     }
