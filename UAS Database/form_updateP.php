@@ -2,14 +2,14 @@
 <head>
     <title>Update Form Warga</title>
 </head>
-<h2>Form untuk perubahan data Warga</h2>
+<h2>Form untuk perubahan data Pengurus</h2>
 <body>
 <?php
     $nik = $_GET['nik'];
 
     require('connectdb.php');
     
-    $query = "SELECT * FROM warga WHERE `nik` = '$nik'";
+    $query = "SELECT * FROM pengurus WHERE `nik` = '$nik'";
 
     $result = mysqli_query($conn, $query);
     if ($result){
@@ -17,7 +17,7 @@
     }
 ?>
 
-<form action="updateW.php" method="post">
+<form action="updateP.php" method="post">
     <b>NIK: <br></b>
     <?php echo $nik; ?>
     <input type="hidden" name="nik" value="<?php echo $nik;?>">
@@ -55,16 +55,24 @@
         <input type="hidden" value="<?php echo $row[4];?>">
     </label>
     <br><br>
-    <b>Pekerjaan: <br></b>
-    <label>
-        <input type="text" name="pekerjaan" size="15" maxlength="25"
-               value="<?php echo $row[5];?>">
-    </label>
-    <br><br>
     <b>Agama: <br></b>
     <label>
         <input type="text" name="agama" size="10" maxlength="15"
-               value="<?php echo $row[6];?>">
+               value="<?php echo $row[5];?>">
+    </label>
+    <br><br>
+    <b>Jabatan: <br></b>
+    <label for="jabatan"></label>
+    <select name="kode" id="jabatan" required>
+        <option value="01">Ketua</option>
+        <option value="02">Wakil Ketua</option>
+        <option value="03">Sekretaris</option>
+        <option value="04">Bendahara</option>
+        <option value="05">Seksi Keamananan dan Lingkungan Hidup</option>
+        <option value="06">Seksi Pembangunan dan Kesejahteraan Sosial</option>
+        <option value="07">Seksi Pemuda, Olahraga, dan Seni Budaya</option>
+    </select>
+    
     </label>
     <br><br>
     <label>

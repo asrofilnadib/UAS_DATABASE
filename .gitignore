@@ -83,3 +83,4 @@
 /laundry/.idea/php.xml
 /.idea/inspectionProfiles/Project_Default.xml
 /laundry/.idea/workspace.xml
+!/laundry/laundry/css/bootstrap.css

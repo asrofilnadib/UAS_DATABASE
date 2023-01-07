@@ -3,12 +3,12 @@
 	<title>Show data of Warga</title>
 </head>
 <body>
-<h2>Data Warga RT 12</h2>
+<h2>Data Pengurus RT 12</h2>
 
 <?php
 	require('connectdb.php');
 	
-    $query = "SELECT * FROM warga order by `nik`";
+    $query = "SELECT * FROM pengurus order by `nik`";
 	$result = mysqli_query($conn, $query);
 	
 	if ($result){
@@ -22,8 +22,8 @@
 					<th width="220">Nama</th>
                     <th width="150">Tanggal Lahir</th>
                     <th width="150">Jenis Kelamin</th>
-                    <th width="150">Pekerjaan</th>
                     <th width=120>Agama</th>
+                    <th width="150">Jabatan</th>
 				</tr>
 				<?php
 					while ($row = mysqli_fetch_row($result)){
@@ -35,8 +35,8 @@
 								$nama = $row[2];
 								$tgl_lahir = $row[3];
 								$jk = $row[4];
-                                $pekerjaan = $row[5];
-                                $agama = $row[6];
+                                $agama = $row[5];
+                                $kode = $row[6];
 							?>
 							<td>
 								<label>
@@ -47,12 +47,12 @@
 							</td>
 							<td><?php echo $nkk;?></a></td>
 							<td>
-                                <a  href="form_updateW.php?nik=<?php echo $nik;?>">
+                                <a  href="form_updateP.php?nik=<?php echo $nik;?>">
                                   <?php echo $nama;?></a></td>
 							<td><?php echo $tgl_lahir;?></td>
 							<td><?php echo $jk;?></td>
-                            <td><?php echo $pekerjaan;?></td>
                             <td><?php echo $agama; ?></td>
+                            <td><?php echo $kode;?></td>
 						</tr>
 						<?php
 					}

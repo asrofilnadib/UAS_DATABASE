@@ -18,7 +18,9 @@
     <file url="file://$PROJECT_DIR$/UAS Database/do_login.php" dialect="GenericSQL" />
     <file url="file://$PROJECT_DIR$/UAS Database/do_registerP.php" dialect="GenericSQL" />
     <file url="file://$PROJECT_DIR$/UAS Database/do_registerW.php" dialect="GenericSQL" />
+    <file url="file://$PROJECT_DIR$/UAS Database/form_updateP.php" dialect="GenericSQL" />
     <file url="file://$PROJECT_DIR$/UAS Database/form_updateW.php" dialect="GenericSQL" />
+    <file url="file://$PROJECT_DIR$/UAS Database/show_dataP.php" dialect="GenericSQL" />
     <file url="file://$PROJECT_DIR$/UAS Database/show_dataW.php" dialect="GenericSQL" />
   </component>
 </project>
