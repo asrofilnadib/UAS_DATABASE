@@ -66,6 +66,7 @@
 			<br><br>
 			<input type="submit" name="hapus" value="Hapus">
 		</form>
+        <a href="pageW.html">Kembali ke halaman utama</a>
 		<?php
 		mysqli_free_result($result);
 	}

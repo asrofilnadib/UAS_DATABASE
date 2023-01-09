@@ -9,7 +9,8 @@
 
     require('connectdb.php');
     
-    $query = "SELECT * FROM pengurus WHERE `nik` = '$nik'";
+    $query = "SELECT nik, nkk, nama, tgl_lahir, jk, agama, kode_kategori
+       FROM pengurus WHERE `nik` = '$nik'";
 
     $result = mysqli_query($conn, $query);
     if ($result){
@@ -51,8 +52,8 @@
     <select name="jk" id="gender" required>
         <option value="Pria">Pria</option>
         <option value="Wanita">Wanita</option>
-    </select>
         <input type="hidden" value="<?php echo $row[4];?>">
+    </select>
     </label>
     <br><br>
     <b>Agama: <br></b>
@@ -71,9 +72,8 @@
         <option value="05">Seksi Keamananan dan Lingkungan Hidup</option>
         <option value="06">Seksi Pembangunan dan Kesejahteraan Sosial</option>
         <option value="07">Seksi Pemuda, Olahraga, dan Seni Budaya</option>
+        <input type="text" value="<?php echo $row[6];?>">
     </select>
-    
-    </label>
     <br><br>
     <label>
         <input type="submit" name="simpan" value="Simpan Perubahan">

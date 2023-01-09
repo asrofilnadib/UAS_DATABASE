@@ -33,6 +33,8 @@
             
             Ini adalah halaman yang hanya dapat diakses
             oleh user yang telah terdaftar di dalam website.
+            <br><br>
+            <a href="show_dataW.php">Lihat daftar Warga</a>
             <?php
         } elseif ($numP == 1) {
 			list($nama) = mysqli_fetch_array($resultP);
@@ -42,6 +44,8 @@
 
             Ini adalah halaman yang hanya dapat diakses
             oleh pengurus yang telah terdaftar di dalam website.
+            <br><br>
+            <a href="show_dataP.php">Lihat daftar Pengurus RT 12</a>
 			<?php
 		} elseif (!$numP or !$numW) {
 			?>

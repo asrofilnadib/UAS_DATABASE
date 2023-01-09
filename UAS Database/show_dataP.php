@@ -8,7 +8,10 @@
 <?php
 	require('connectdb.php');
 	
-    $query = "SELECT * FROM pengurus order by `nik`";
+    $query = "SELECT p.nik, p.nkk, p.nama, p.tgl_lahir, p.jk, p.agama, kp.jabatan
+            FROM `pengurus` p ,  `kategori_pengurus` kp
+            WHERE `p`.`kode_kategori` = `kp`.`kode`
+                 order by `nik`";
 	$result = mysqli_query($conn, $query);
 	
 	if ($result){
@@ -66,6 +69,8 @@
 			<br><br>
 			<input type="submit" name="hapus" value="Hapus">
 		</form>
+        <br><br>
+        <a href="pageP.html">Kembali ke halaman utama</a>
 		<?php
 		mysqli_free_result($result);
 	}

@@ -7,6 +7,11 @@ if (isset($_POST["simpan"])){
     $jk = $_POST['jk'];
     $pekerjaan = $_POST['pekerjaan'];
 	$agama = $_POST['agama'];
+    
+    if (!empty($jk)){
+       $selected = $jk;
+       echo "Anda memilik " . $selected;
+    }
 
     require('connectdb.php');
 
