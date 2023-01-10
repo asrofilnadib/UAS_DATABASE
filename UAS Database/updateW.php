@@ -15,15 +15,15 @@ if (isset($_POST["simpan"])){
 
     require('connectdb.php');
 
-    $sql = "update warga ".
-        "set `nik` = '$nik', ".
+    $sql = "UPDATE warga ".
+        "SET `nik` = '$nik', ".
         "    `nkk` = '$nkk', ".
         "    `nama` = '$nama', ".
         "    `tgl_lahir` = '$tgl_lahir'," .
 		"    `jk` = '$jk'," .
 		"    `pekerjaan` = '$pekerjaan'," .
         "    `agama` = '$agama'," .
-        "where nip = '$nik";
+        "where `nik` = '$nik";
 
     mysqli_query($conn, $sql);
     $num = mysqli_affected_rows($conn);

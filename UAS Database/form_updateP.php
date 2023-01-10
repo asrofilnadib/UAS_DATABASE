@@ -48,12 +48,8 @@
     </label>
     <br><br>
     <b>Jenis Kelamin: <br></b>
-    <label for="gender">
-    <select name="jk" id="gender" required>
-        <option value="Pria">Pria</option>
-        <option value="Wanita">Wanita</option>
-        <input type="hidden" value="<?php echo $row[4];?>">
-    </select>
+    <label >
+        <input type="text" name="jk" value="<?php echo $row[4];?>">
     </label>
     <br><br>
     <b>Agama: <br></b>
@@ -63,17 +59,20 @@
     </label>
     <br><br>
     <b>Jabatan: <br></b>
-    <label for="jabatan"></label>
-    <select name="kode" id="jabatan" required>
-        <option value="01">Ketua</option>
-        <option value="02">Wakil Ketua</option>
-        <option value="03">Sekretaris</option>
-        <option value="04">Bendahara</option>
-        <option value="05">Seksi Keamananan dan Lingkungan Hidup</option>
-        <option value="06">Seksi Pembangunan dan Kesejahteraan Sosial</option>
-        <option value="07">Seksi Pemuda, Olahraga, dan Seni Budaya</option>
-        <input type="text" value="<?php echo $row[6];?>">
-    </select>
+    <label>
+        <input type="text" placeholder="Masukan nilai antara 01 - 05"
+               name="kode" value="<?php echo $row[6];?>" size="25">
+    </label>
+<!--    <select name="kode" id="jabatan" required>-->
+<!--        <option value="01">Ketua</option>-->
+<!--        <option value="02">Wakil Ketua</option>-->
+<!--        <option value="03">Sekretaris</option>-->
+<!--        <option value="04">Bendahara</option>-->
+<!--        <option value="05">Seksi Keamananan dan Lingkungan Hidup</option>-->
+<!--        <option value="06">Seksi Pembangunan dan Kesejahteraan Sosial</option>-->
+<!--        <option value="07">Seksi Pemuda, Olahraga, dan Seni Budaya</option>-->
+<!--        <input type="text" value="--><!--">-->
+<!--    </select>-->
     <br><br>
     <label>
         <input type="submit" name="simpan" value="Simpan Perubahan">

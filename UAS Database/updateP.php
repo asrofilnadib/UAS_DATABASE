@@ -18,7 +18,7 @@ if (isset($_POST["simpan"])){
 		"    `jk` = '$jk'," .
         "    `agama` = '$agama'," .
         "     `kode_kategori` = '$kode'" .
-        "where nip = '$nik";
+        "where `nik` = '$nik";
 
     mysqli_query($conn, $sql);
     $num = mysqli_affected_rows($conn);

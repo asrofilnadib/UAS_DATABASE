@@ -6,7 +6,7 @@
 
         for ($i=0; $i < sizeof($data); $i++){
             $sql = "delete from warga ".
-                "where nik = '$data[$i]'";
+                "where `nik` = '$data[$i]'";
 
             mysqli_query($conn, $sql);
         }

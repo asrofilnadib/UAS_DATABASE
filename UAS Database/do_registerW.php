@@ -5,15 +5,15 @@
 <body>
 <h2>Status Registrasi</h2>
 <?php
-    if (isset($_POST['daftar'])) {
-        $nik = $_POST['nik'];
-        $nkk = $_POST['nkk'];
-        $nama = $_POST['nama'];
-        $tgl_lhr = $_POST['tgl_lahir'];
-        $jk = $_POST['jk'];
-        $pekerjaan = $_POST['pekerjaan'];
-        $agama = $_POST['agama'];
-        $pwd = $_POST['pwd'];
+    if (isset($_POST['daftarW'])) {
+        $nik = $_POST['NIK'];
+        $nkk = $_POST['NKK'];
+        $nama = $_POST['Nama'];
+        $tgl_lhr = $_POST['Tanggal Lahir'];
+        $jk = $_POST['Jenis Kelamin'];
+        $pekerjaan = $_POST['Pekerjaan'];
+        $agama = $_POST['Agama'];
+        $pwd = $_POST['Password'];
   
         include("connectdb.php");
         

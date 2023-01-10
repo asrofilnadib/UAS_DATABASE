@@ -47,12 +47,9 @@
     </label>
     <br><br>
     <b>Jenis Kelamin: <br></b>
-    <label for="gender" value="<?php echo $row[4]?>">
-    <select name="jk" id="gender" required>
-        <option value="" disabled selected>Choose Option</option>
-        <option value="Pria">Pria</option>
-        <option value="Wanita">Wanita</option>
-    </select>
+    <label>
+        <input type="text" name="jk" size="10" maxlength="15"
+        value="<?php echo $row[4];?>">
     </label>
     <br><br>
     <b>Pekerjaan: <br></b>
