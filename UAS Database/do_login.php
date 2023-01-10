@@ -32,7 +32,7 @@
             Selamat datang, <b><?php echo $nama; ?> Dalam RT 12</b><br>
             
             Ini adalah halaman yang hanya dapat diakses
-            oleh user yang telah terdaftar di dalam website.
+            oleh warga yang telah terdaftar di dalam website.
             <br><br>
             <a href="show_dataW.php">Lihat daftar Warga</a>
             <?php
