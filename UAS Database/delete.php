@@ -2,7 +2,7 @@
     if (isset($_POST['hapus'])){
         $data = $_POST['data'];
 
-        require ('connectdb.php');
+        require('connectdb.php');
 
         for ($i=0; $i < sizeof($data); $i++){
             $sql = "delete from warga ".

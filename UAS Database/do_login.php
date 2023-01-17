@@ -35,6 +35,8 @@
             oleh warga yang telah terdaftar di dalam website.
             <br><br>
             <a href="show_dataW.php">Lihat daftar Warga</a>
+            <br><br>
+            <a href="login.php">Logout</a>
             <?php
         } elseif ($numP == 1) {
 			list($nama) = mysqli_fetch_array($resultP);
@@ -46,6 +48,8 @@
             oleh pengurus yang telah terdaftar di dalam website.
             <br><br>
             <a href="show_dataP.php">Lihat daftar Pengurus RT 12</a>
+            <br><br>
+            <a href="login.php">Logout</a>
 			<?php
 		} elseif (!$numP or !$numW) {
 			?>

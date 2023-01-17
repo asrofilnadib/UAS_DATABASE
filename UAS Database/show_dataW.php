@@ -67,6 +67,8 @@
 			<input type="submit" name="hapus" value="Hapus">
 		</form>
         <a href="pageW.html">Kembali ke halaman utama</a>
+        <br><br>
+        <a href="menambah_dataW.html">Menambah data</a>
 		<?php
 		mysqli_free_result($result);
 	}

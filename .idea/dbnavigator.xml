@@ -32,6 +32,9 @@
     <filter-actions connection-id="facac69a-a1aa-42b2-85a1-82a05292fbfb" dataset="rukun_tetangga.pengumuman" active-filter-id="" />
     <filter-actions connection-id="facac69a-a1aa-42b2-85a1-82a05292fbfb" dataset="rukun_tetangga.admin" active-filter-id="" />
   </component>
+  <component name="DBNavigator.Project.ExecutionManager">
+    <retain-sticky-names value="false" />
+  </component>
   <component name="DBNavigator.Project.ObjectQuickFilterManager">
     <last-used-operator value="EQUAL" />
     <filters />
