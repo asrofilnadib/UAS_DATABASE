@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Mengupload file</title>
+</head>
+<body>
+<h2>Demo melakukan upload file</h2>
+
+<ol>
+  <li>Tulis nama file yang akan di-upload atau gunakan tombol BROWSE untuk menentukan lokasi file</li>
+    <li>Ketika selesai, klik tombol <b>Upload File</b></li>
+</ol>
+<hr>
+<div align="center">
+    <form action="uploadfile.php" method="post"
+          enctype="multipart/form-data">
+        <input type="hidden" name="maxFileSize" value="1000000">
+        <input type="file" name="fileUser" size="60">
+        <br><br>
+        <input type="submit" value="Upload File">
+    </form>
+</div>
+</body>
+</html>
